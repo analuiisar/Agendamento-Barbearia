@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento Barbearia</title>
+</head>
+<body>
+
+<!-- Formulário p/ o cliente fazer o agendamento-->
+    
+    <h2>Agendar Atendimento</h2>
+    <form action class="formulario">
+
+        <label for="Nome" class="label1">Nome Completo:</label>
+        <input type class="input1" name="Nome" id="Nome" required>
+
+        <label for="CPF" class="label1">CPF:</label>
+        <input type class="input1" name="CPF" id="CPF" required>
+
+        <label for="Endereço" class="label1">Endereço:</label>
+        <input type class="input1" name="Endereço" id="Endereço" required>
+
+        <label for="Telefone" class="label1">Telefone:</label>
+        <input type class="input1" name="Telefone" id="Telefone" required>
+
+        <label for="Escolha o corte" class="label1">Escolha o corte desejado:
+            <select id="corte">
+                <option value="Buzz cut">Buzz Cut</option>
+                <option value="Fade/Degrade">Fade/Degradê</option>
+                <option value="Mullet moderno">Mullet Moderno</option>
+                <option value="Old money">Old Money</option>
+            </select>
+        </label>
+
+        <label for="Data" class="label1">Data:
+        <input type="date" id="Data" required></label>
+
+        <label for="Horario" class="label1">Horário
+        <input type="time" id="horario" required></label>
+        
+        <button class="botao"> Agendar </button>
+
+    </form>
+
+    <!-- Tabela para controle de agenda da barbearia gerada de acordo com os dados inseridos no formulário -->
+
+    <h2>Controle de Agenda - Barbearia</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Corte Desejado</th>
+            <th>Data</th>
+            <th>Horário</th>
+        </tr>
+        </thead>
+        <tbody>
+            <!-- Outras linhas vão entrar aqui-->
+        </tbody>
+    </table>
+
+    
+    
+</body>
+</html>
