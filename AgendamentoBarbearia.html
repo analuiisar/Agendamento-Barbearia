@@ -11,6 +11,7 @@
 <body>
 
     <!-- Formulário p/ o cliente fazer o agendamento-->
+
     <form action>
 
         <h2>Agendar Atendimento</h2>
@@ -30,26 +31,27 @@
         <label for="Email">Email:</label>
         <input type="email" name="Email" id="Email" placeholder="seuemail@exemplo.com" required>
 
-        <label for="Escolha o corte">Escolha o corte desejado:
-            <select id="corte">
+        <label for="Escolha o corte">Escolha o corte desejado:</label>
+            <select id="corte" class="selection">
+                <option value disabled selected hidden="Selecione">Selecione</option>
                 <option value="Buzz cut">Buzz Cut</option>
                 <option value="Fade/Degrade">Fade/Degradê</option>
                 <option value="Mullet moderno">Mullet Moderno</option>
                 <option value="Old money">Old Money</option>
             </select>
-        </label>
+    
         
+        <label for="Data">Data:</label>
+            <input class="campo" type="date" id="Data" placeholder="dd/mm/aaaa" required>
 
-        <label for="Data">Data:
-            <input type="date" id="Data" required></label>
-
-        <label for="Horario">Horário
-            <input type="time" id="horario" required></label>
+        <label for="Horario">Horário</label>
+            <input class="campo" type="time" id="Horário" placeholder="--:--" required>
 
         <button> Agendar </button>
 
     </form>
 
+    <script src="AgendaBarbearia.js"></script>     <!-- Fazer o link com javascript -->
 </body>
 
 </html>
