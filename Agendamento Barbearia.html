@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento Barbearia</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<!-- Formulário p/ o cliente fazer o agendamento-->
-    
-    <h2>Agendar Atendimento</h2>
-    <form action class="formulario">
+    <!-- Formulário p/ o cliente fazer o agendamento-->
+    <form action>
 
-        <label for="Nome" class="label1">Nome Completo:</label>
-        <input type class="input1" name="Nome" id="Nome" required>
+        <h2>Agendar Atendimento</h2>
 
-        <label for="CPF" class="label1">CPF:</label>
-        <input type class="input1" name="CPF" id="CPF" required>
+        <label for="Nome">Nome Completo:</label>
+        <input type="text" name="Nome" id="Nome" placeholder="Nome completo" required>
 
-        <label for="Endereço" class="label1">Endereço:</label>
-        <input type class="input1" name="Endereço" id="Endereço" required>
+        <label for="CPF">CPF:</label>
+        <input type="number" name="CPF" id="CPF" placeholder="000.000.000-00" required>
 
-        <label for="Telefone" class="label1">Telefone:</label>
-        <input type class="input1" name="Telefone" id="Telefone" required>
+        <label for="Endereço">Endereço:</label>
+        <input type="text" name="Endereço" id="Endereço" placeholder="Endereço completo" required>
 
-        <label for="Escolha o corte" class="label1">Escolha o corte desejado:
+        <label for="Telefone">Telefone:</label>
+        <input type="tel" name="Telefone" id="Telefone" placeholder="(00)00000-0000" required>
+
+        <label for="Email">Email:</label>
+        <input type="email" name="Email" id="Email" placeholder="seuemail@exemplo.com" required>
+
+        <label for="Escolha o corte">Escolha o corte desejado:
             <select id="corte">
                 <option value="Buzz cut">Buzz Cut</option>
                 <option value="Fade/Degrade">Fade/Degradê</option>
@@ -32,36 +38,18 @@
                 <option value="Old money">Old Money</option>
             </select>
         </label>
-
-        <label for="Data" class="label1">Data:
-        <input type="date" id="Data" required></label>
-
-        <label for="Horario" class="label1">Horário
-        <input type="time" id="horario" required></label>
         
-        <button class="botao"> Agendar </button>
+
+        <label for="Data">Data:
+            <input type="date" id="Data" required></label>
+
+        <label for="Horario">Horário
+            <input type="time" id="horario" required></label>
+
+        <button> Agendar </button>
 
     </form>
 
-    <!-- Tabela para controle de agenda da barbearia gerada de acordo com os dados inseridos no formulário -->
-
-    <h2>Controle de Agenda - Barbearia</h2>
-    <table>
-        <thead>
-        <tr>
-            <th>Nome</th>
-            <th>Telefone</th>
-            <th>Corte Desejado</th>
-            <th>Data</th>
-            <th>Horário</th>
-        </tr>
-        </thead>
-        <tbody>
-            <!-- Outras linhas vão entrar aqui-->
-        </tbody>
-    </table>
-
-    
-    
 </body>
+
 </html>
