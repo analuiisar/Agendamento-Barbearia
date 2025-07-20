@@ -12,7 +12,7 @@
 
     <!-- Formulário p/ o cliente fazer o agendamento-->
 
-    <form action>
+    <form id="formulario">
 
         <h2>Agendar Atendimento</h2>
 
@@ -47,11 +47,32 @@
         <label for="Horario">Horário</label>
             <input class="campo" type="time" id="Horário" placeholder="--:--" required>
 
-        <button> Agendar </button>
+        <button type="submit"> Agendar </button>
 
     </form>
 
+     <!-- Tabela para controle de agenda da barbearia gerada de acordo com os dados inseridos no formulário -->
+
+    <h2>Controle de Agenda - Barbearia</h2>
+    <table id="tabela">
+        <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Email</th>
+            <th>Corte Desejado</th>
+            <th>Data</th>
+            <th>Horário</th>
+        </tr>
+        </thead>
+        <tbody>
+            <!-- Outras linhas vão entrar aqui-->
+             
+        </tbody>
+    </table>
+
     <script src="AgendaBarbearia.js"></script>     <!-- Fazer o link com javascript -->
+
 </body>
 
 </html>
